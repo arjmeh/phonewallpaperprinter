@@ -1,0 +1,156 @@
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #AFCBFF;
+    color: #424B54;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+* {
+    font-family: 'Space Mono', monospace;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6rem;
+    height: 100%;
+    background-color: #424B54;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content vertically */
+    text-align: center;
+}
+
+.title {
+    color: #424B54;
+    font-size: 4em;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+.title-container {
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    margin-top: 0; /* Reset the margin to remove space */
+}
+
+.icon {
+    font-size: 2.5em;
+}
+
+.icon:first-child {
+    margin-right: 3rem; /* Adjust the right margin of the first icon */
+}
+
+.icon:last-child {
+    margin-left: 3rem; /* Adjust the left margin of the last icon */
+}
+
+
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Split the container into two equal columns */
+    height: 100vh; /* Set the height of the container to fill the viewport */
+  }
+  
+  
+.left-side {
+display: flex;
+  justify-content: center; /* Center horizontally */
+
+}
+
+
+.phone-mockup {
+    height: 600px;
+    width: 277px;
+    background-color: white;
+    border-radius: 18px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden; /* Prevent the image from overflowing the phone mockup */
+    cursor: grab; /* Set cursor to indicate drag capability */
+    transition: opacity 0.3s ease; /* Add a transition for smooth opacity change */
+}
+
+/* Apply opacity change on hover */
+.phone-mockup:hover {
+    opacity: 0.75; /* Reduce opacity to 75% on hover */
+}
+
+
+
+
+.button-blue {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; /* Adjust margin as needed */
+    font-size: 1em;
+    transition: opacity 0.3s ease; /* Add a transition for smooth opacity change */
+}
+
+/* CSS for the button icon */
+.button-blue i {
+    margin-right: 5px; /* Adjust the icon's right margin as needed */
+}
+
+/* Apply opacity change on hover */
+.button-blue:hover {
+    opacity: 0.75; /* Reduce opacity to 75% on hover */
+}
+
+.phone-mockup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* White button style */
+.button-white {
+    background-color: white; /* White background */
+    color: #424B54;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    transition: opacity 0.3s ease; /* Add a transition for smooth opacity change */
+}
+
+/* CSS for the button icon */
+.button-white i {
+    margin-right: 5px; /* Adjust the icon's right margin as needed */
+}
+
+/* Apply opacity change on hover */
+.button-white:hover {
+    opacity: 0.75; /* Reduce opacity to 75% on hover */
+}
+
+.right-side {
+    padding: 50px;
+}
