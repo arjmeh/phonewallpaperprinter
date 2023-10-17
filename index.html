@@ -32,6 +32,7 @@
         <div class="left-side">
             <!-- Trigger file input when phone mockup is clicked -->
             <div class="phone-mockup-container">
+                <div class="cameracutout"></div>
             <label for="file" class="phone-mockup">
                 <i class="fa-solid fa-file-circle-plus fa-2xl newfileicon"></i>
             </label>
@@ -45,8 +46,17 @@
         </div>
         <div class="right-side">
             <div class="button-containers">
-            <button class="button-white" id="print-button" onclick="printImage()">
+                <button class="button-white" id="print-button" onclick="setModelDimensions('iphone13')">
+                    iPhone 14
+                </button>
+            <button class="button-white" id="print-button" onclick="setModelDimensions('iphone13')">
                 iPhone 13
+            </button>
+            <button class="button-white" id="print-button" onclick="setModelDimensions('iphone12')">
+                iPhone 12
+            </button>
+            <button class="button-white" id="print-button" onclick="setModelDimensions('iphone11')">
+                iPhone 11
             </button>
         </div>
         </div>
