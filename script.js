@@ -8,8 +8,8 @@ let width = '';
 let height = '';
 
 
-
 const iphoneModels = {
+    'iphone14': {width: '270px', height: '555px', radius: '47.33pt'},
     'iphone13': { width: '270px', height: '555px',radius: '47.33pt' },
     'iphone12': { width: '270px', height: '555px', radius: '47.33pt' },
     'iphone11': { width: '250px', height: '545px',radius: '41.5pt' },
@@ -124,7 +124,7 @@ function printImage() {
         printJS({
             printable: img.src,
             type: 'image',
-            imageStyle: `width:${window.width}; height:${window.height}; border-radius: 20px; object-fit: cover;`,
+            imageStyle: `width:${window.width}; height:${window.height}; border-radius: ${window.radius}; object-fit: cover;`,
           });
     } else {
         console.log("No file selected to print.");
@@ -138,3 +138,5 @@ function printImage() {
 document.getElementById("print-button").addEventListener("click", function () {
     printImage();
 });
+
+
