@@ -168,3 +168,11 @@ display: flex;
 .button-white {
     margin-bottom: 10px;
 }
+
+
+/* Add this CSS to style the color picker */
+#colorPicker {
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+}
